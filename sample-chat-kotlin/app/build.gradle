@@ -27,13 +27,12 @@ repositories {
 android {
     def versionQACode = 1
 
-    compileSdkVersion 31
-    buildToolsVersion "31.0.0"
+    compileSdkVersion 33
     flavorDimensions dimensionDefault
 
     defaultConfig {
         applicationId "com.quickblox.sample.chat.kotlin"
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 31
         versionCode 429000
         versionName '4.2.9'
@@ -81,14 +80,15 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
-    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    lint {
+        abortOnError false
+    }
+    namespace 'com.quickblox.sample.chat.kotlin'
 }
 
 dependencies {

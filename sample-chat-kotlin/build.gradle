@@ -5,8 +5,8 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.2'
-        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.android.tools.build:gradle:7.3.1'
+        classpath 'com.google.gms:google-services:4.3.14'
     }
 }
 
@@ -26,13 +26,13 @@ ext {
     dimensionDefault = 'default'
 
     // QuickBlox SDK version
-    qbSdkVersion = '3.10.1'
+    qbSdkVersion = '4.0.0'
 
     //Kotlin
-    kotlinGradlePluginVersion = '1.5.31'
+    kotlinGradlePluginVersion = '1.7.20'
 
     //Firebase
-    firebaseCoreVersion = '20.1.2'
+    firebaseCoreVersion = '21.1.1'
 
     //Material
     materialVersion = '1.5.0'
